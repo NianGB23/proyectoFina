@@ -1,8 +1,5 @@
 package com.proyectoFinalFB.entity;
 
-package com.proyectofinal.entity;
-
-
 import java.util.ArrayList;
 
 
@@ -27,16 +24,10 @@ public class Schedule {
 		contactList += "---------------------------------------------------\n";
 		for (int i = 0; i < aContact.size(); i++) {
 			contactList = contactList + aContact.get(i).getId() + aContact.get(i).getName()
-					+ aContact.get(i).getPhone() + "\n";
+					+ aContact.get(i).getPhone() + aContact.get(i).getAddress() + aContact.get(i).getBirthdate() 
+					+ aContact.get(i).getEmail() + aContact.get(i).getProfession() + aContact.get(i).getBasicSalary() +aContact.get(i).getWorkdays() + "\n";
 		}
 
 		return contactList;
 	}
-	
-	public String modifyContact(Contact contact) {
-		
-		return;
-	}
-	
-	
 }
